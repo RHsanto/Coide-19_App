@@ -1,6 +1,7 @@
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Text from './src/components/text/text';
 import { typography } from './src/theme/typography';
 
 
