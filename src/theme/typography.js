@@ -1,4 +1,5 @@
 export const typography ={
-  primary:'GraphikExtralight',
-  primaryBold:'GraphikBold'
+  primary:'GraphikMedium',
+  primaryBold:'GraphikBold',
+ 
 }

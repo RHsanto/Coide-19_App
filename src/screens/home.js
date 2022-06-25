@@ -24,7 +24,10 @@ export default function Home(){
       <Octicons name="triangle-down" size={24} style={{color:colors.grey,marginRight:spacing[2]}} /> 
         </View>
       </View> 
-       
+      <View>
+       <Text preset="h4">Are you feeling sick?</Text>
+       <Text preset="small" style={{marginTop:spacing[3],lineHeight:22,}}>If you feel sick with any of covid-19 symptoms please call or SMS us immediately for help.</Text>
+      </View>
       </View>
     </ScrollView>
    </SafeAreaView>
@@ -50,7 +53,7 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     justifyContent:'space-between',
     alignItems:'center',
-    paddingVertical:spacing[10]
+    paddingVertical:spacing[8]
   },
   dropdown:{
     backgroundColor:colors.white,

@@ -12,8 +12,8 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
   const [loaded] = useFonts({
-    GraphikExtralight: require('./assets/fonts/GraphikExtralight.otf'),
     GraphikBold: require('./assets/fonts/GraphikBold.otf'),
+    GraphikMedium: require('./assets/fonts/GraphikMedium.otf'),
   });
   
   if (!loaded) {
@@ -32,11 +32,4 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
