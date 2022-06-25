@@ -3,6 +3,7 @@ import Text from "../components/text/text";
 import { colors } from "../theme/color";
 import { spacing } from "../theme/spacing";
 import { Octicons ,FontAwesome,Feather,MaterialCommunityIcons } from '@expo/vector-icons';
+import { typography } from "../theme/typography";
 
 export default function Home(){
 
@@ -69,10 +70,13 @@ export default function Home(){
        </View>
   {/* testView  */}
      <View style={styles.testView}>
-     <Image style={{width: 100,}} source={require('../../assets/image/XMLID 80 (1).png')} />
-      <View>
-        <Text preset="h4"> Do your own test!</Text>
+      <View style={styles.lastView} >
+      <Text preset="h4"> Do your own test!</Text>
         <Text > Follow the instructions to do your own test.</Text>
+      </View>
+      <View style={styles.lastView}>
+        <Text preset="h4"> Do your own test!</Text>
+        <Text preset="small" style={{fontFamily:typography.small,marginTop:5,lineHeight:16}}> Follow the instructions to do your own test.</Text>
       </View>
      
      
@@ -160,8 +164,12 @@ const styles = StyleSheet.create({
    marginVertical:spacing[5],
    backgroundColor:colors.violet2,
    borderRadius:16,
+   padding:spacing[4],
    flexDirection:'row',
-   justifyContent:'space-between',
-   padding:spacing[4]
+
+  }
+  ,
+  lastView:{
+    width:'50%',
   }
 })
