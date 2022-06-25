@@ -15,9 +15,16 @@ export default function Home(){
         <Feather name="bell" size={24} color="white" />
       </View>
       <View style={styles.covidView}>
-        <Text preset="h1">Covid-19</Text>
-        <Text>Covid-19</Text>
-      </View>
+        <View>
+        <Text preset="h3">Covid-19</Text>
+        </View>
+        <View style={styles.dropdown}>
+        <Image style={{width:30,height:30, borderRadius:'50%'}} source={require('../../assets/image/download.png')} />
+        <Text preset="small" style={styles.usa}>USA</Text>
+        <View><Text >Covid</Text></View> 
+        </View>
+      </View> 
+       
       </View>
     </ScrollView>
    </SafeAreaView>
@@ -44,5 +51,17 @@ const styles = StyleSheet.create({
     justifyContent:'space-between',
     alignItems:'center',
     paddingVertical:spacing[10]
+  },
+  dropdown:{
+    backgroundColor:colors.white,
+    padding:spacing[3],
+    flexDirection:'row',
+    alignItems:'center',
+    borderRadius:'50%'
+
+  },
+  usa:{
+   color:colors.black,
+   paddingHorizontal:spacing[2]
   }
 })
