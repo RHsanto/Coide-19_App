@@ -5,6 +5,7 @@ import { typography } from "../../theme/typography";
 const BASE ={
   fontFamily:typography.primary,
   fontSize:16,
+  color:colors.white
 }
 
 const BOLD ={
