@@ -21,7 +21,7 @@ export default function Home(){
         <View style={styles.dropdown}>
         <Image style={{width:30,height:30, borderRadius:'50%'}} source={require('../../assets/image/download.png')} />
         <Text preset="small" style={styles.usa}>USA</Text>
-      <Octicons name="triangle-down" size={24} style={{color:colors.grey}} /> 
+      <Octicons name="triangle-down" size={24} style={{color:colors.grey,marginRight:spacing[2]}} /> 
         </View>
       </View> 
        
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   dropdown:{
     backgroundColor:colors.white,
-    padding:spacing[3],
+    padding:spacing[2],
     flexDirection:'row',
     alignItems:'center',
     borderRadius:'50%'
@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
   },
   usa:{
    color:colors.black,
-   paddingHorizontal:spacing[2]
+   paddingLeft:spacing[2],
+   paddingRight:spacing[3]
   }
 })
