@@ -41,6 +41,15 @@ export default function Home(){
        </View>
       </View>
       </View>
+      {/* here start second part/container */}
+      <View style={styles.secondContainer}>
+        <View style={styles.prevention}>
+          <Text preset="h3" style={{color:colors.black}}>Prevention</Text>
+          <View>
+            
+          </View>
+        </View>
+      </View>
     </ScrollView>
    </SafeAreaView>
   )
@@ -73,12 +82,11 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     alignItems:'center',
     borderRadius:'50%'
-
   },
   usa:{
    color:colors.black,
    paddingLeft:spacing[2],
-   paddingRight:spacing[3]
+   paddingRight:spacing[4]
   },
   contactBtn:{
    flexDirection:'row',
@@ -97,5 +105,10 @@ const styles = StyleSheet.create({
     paddingHorizontal:spacing[5],
     
   },
- 
+  secondContainer:{
+    padding:spacing[8]
+  },
+  prevention:{
+    
+  }
 })
