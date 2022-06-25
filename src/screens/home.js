@@ -33,22 +33,52 @@ export default function Home(){
       <View style={styles.contactBtn}>
        <View style={[styles.commonBtn,{backgroundColor:colors.orange}]}>
        <FontAwesome name="phone" size={20} color="white" />
-        <Text>Call Now</Text>
+        <Text style={{color:colors.white}}>Call Now</Text>
        </View>
        <View style={[styles.commonBtn,{backgroundColor:colors.blue}]}>
        <Feather name="message-circle" size={20} color="white" />
-        <Text>Send SMS</Text>
+        <Text style={{color:colors.white}}>Send SMS</Text>
        </View>
       </View>
       </View>
+
       {/* here start second part/container */}
       <View style={styles.secondContainer}>
-        <View style={styles.prevention}>
+        <View>
           <Text preset="h3" style={{color:colors.black}}>Prevention</Text>
-          <View>
-            
-          </View>
         </View>
+       <View style={styles.allImage}> 
+      <View>
+        <View style={styles.imageView}>
+         <Text>kkk</Text>
+        </View>
+        <Text style={styles.imageText}>Avoid close contact</Text>
+      </View>
+      <View>
+        <View style={styles.imageView}>
+         <Text>kkk</Text>
+        </View>
+        <Text style={styles.imageText}>Clean your hands often</Text>
+      </View>
+      <View>
+        <View style={styles.imageView}>
+         <Text>kkk</Text>
+        </View>
+        <Text style={styles.imageText}>Wear a facemask</Text>
+      </View>
+       </View>
+  {/* testView  */}
+     <View style={styles.testView}>
+     <Image style={{width: 100,}} source={require('../../assets/image/XMLID 80 (1).png')} />
+      <View>
+        <Text preset="h4"> Do your own test!</Text>
+        <Text > Follow the instructions to do your own test.</Text>
+      </View>
+     
+     
+     </View>
+
+
       </View>
     </ScrollView>
    </SafeAreaView>
@@ -108,7 +138,30 @@ const styles = StyleSheet.create({
   secondContainer:{
     padding:spacing[8]
   },
-  prevention:{
-    
+  allImage:{
+    flexDirection:'row',
+    justifyContent:'space-between'
+  },
+  imageView:{
+    marginTop:spacing[3],
+    backgroundColor:'#FFE5EE',
+    width: 90,
+    height: 90,
+    borderRadius:'50%',
+    justifyContent:'center',
+    alignItems:'center'
+  },
+  imageText:{
+    marginTop:10,
+    width: 90,
+    textAlign:'center'
+  },
+  testView:{
+   marginVertical:spacing[5],
+   backgroundColor:colors.violet2,
+   borderRadius:16,
+   flexDirection:'row',
+   justifyContent:'space-between',
+   padding:spacing[4]
   }
 })
