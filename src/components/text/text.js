@@ -1,6 +1,9 @@
-import { Text as RNtext } from "react-native";
+import { StyleSheet, Text as RNtext } from "react-native";
+import { presets } from "./text.preset";
 
 
-export default function Text({children}){
-  return<RNtext>{children}</RNtext>
+export default function Text({children,preset: preset="default",style}){
+ 
+  const textStyle =StyleSheet.compose(presets[preset],style); 
+  return<RNtext style={textStyle}>{children}</RNtext>
 }

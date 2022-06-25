@@ -17,9 +17,10 @@ export default function App() {
   if (!loaded) {
     return null;
   }
+
   return (
     <View style={styles.container}>
-      <Text  style={{ fontSize: 30,fontFamily:typography.primary }}>Open up App.js to start working on your app!</Text>
+      <Text  style={{ fontSize: 30,fontFamily:typography.primaryBold }}>Open up App.js to start working on your app!</Text>
       <Text style={{fontFamily:'GraphikExtralight',fontSize: 30,}}>Hello</Text>
       <StatusBar style="auto" />
     </View>
