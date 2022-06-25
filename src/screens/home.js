@@ -3,7 +3,7 @@ import Text from "../components/text/text";
 import { colors } from "../theme/color";
 import { Feather } from '@expo/vector-icons';
 import { spacing } from "../theme/spacing";
-
+import { Octicons } from '@expo/vector-icons';
 export default function Home(){
 
   return(
@@ -21,7 +21,7 @@ export default function Home(){
         <View style={styles.dropdown}>
         <Image style={{width:30,height:30, borderRadius:'50%'}} source={require('../../assets/image/download.png')} />
         <Text preset="small" style={styles.usa}>USA</Text>
-        <View><Text >Covid</Text></View> 
+      <Octicons name="triangle-down" size={24} style={{color:colors.grey}} /> 
         </View>
       </View> 
        
