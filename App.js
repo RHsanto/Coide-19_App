@@ -3,9 +3,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import Text from './src/components/text/text';
 import { typography } from './src/theme/typography';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Home from './src/screens/home';
 
-
-
+const Stack = createNativeStackNavigator();
 
 export default function App() {
 
@@ -19,11 +21,14 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <Text  style={{ fontSize: 30,fontFamily:typography.primaryBold }}>Open up App.js to start working on your app!</Text>
-      <Text style={{fontFamily:'GraphikExtralight',fontSize: 30,}}>Hello</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
+     <StatusBar style="auto" />
+    </>
   );
 }
 
