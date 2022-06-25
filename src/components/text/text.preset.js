@@ -1,3 +1,4 @@
+import { colors } from "../../theme/color";
 import { typography } from "../../theme/typography";
 
 
@@ -9,6 +10,7 @@ const BASE ={
 const BOLD ={
   fontFamily:typography.primaryBold,
   fontSize:16,
+  color:colors.white
 }
 
 export const presets ={

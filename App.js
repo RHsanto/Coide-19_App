@@ -13,7 +13,7 @@ export default function App() {
 
   const [loaded] = useFonts({
     GraphikExtralight: require('./assets/fonts/GraphikExtralight.otf'),
-    GraphikBlack: require('./assets/fonts/GraphikBlack.otf'),
+    GraphikBold: require('./assets/fonts/GraphikBold.otf'),
   });
   
   if (!loaded) {
