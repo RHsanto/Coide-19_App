@@ -74,9 +74,9 @@ export default function Home(){
       <View>
       <Image style={{marginTop:-spacing[7]}} source={require('../../assets/image/Frame.png')} />
       </View>
-      <View style={{marginLeft:spacing[4]}}>
+      <View style={{marginLeft:spacing[4], width:'60%'}}>
       <Text preset="h4"> Do your own test!</Text>
-        <Text  > 
+        <Text  style={styles.followText}> 
         Follow the instructions  to do your own test.</Text>
       </View>
      
@@ -148,10 +148,7 @@ const styles = StyleSheet.create({
     justifyContent:'space-between'
   },
   imageView:{
-    marginTop:spacing[3],
-    backgroundColor:'#FFE5EE',
-    width: 90,
-    height: 90,
+    marginVertical:spacing[3],
     borderRadius:'50%',
     justifyContent:'center',
     alignItems:'center'
@@ -162,15 +159,20 @@ const styles = StyleSheet.create({
     textAlign:'center'
   },
   testView:{
-   marginVertical:spacing[5],
+   marginVertical:spacing[7],
    backgroundColor:colors.violet2,
    borderRadius:16,
    padding:spacing[4],
    height:105,
    flexDirection:'row',
-  
+   width:'100%'
    
   }
   ,
-
+  followText:{
+    paddingRight:spacing[3],
+    paddingVertical:spacing[2],
+    lineHeight:22,
+    color:colors.white
+  }
 })
