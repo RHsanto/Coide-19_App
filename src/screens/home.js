@@ -49,22 +49,22 @@ export default function Home(){
         <View>
           <Text preset="h3" style={{color:colors.black}}>Prevention</Text>
         </View>
-       <View style={styles.allImage}> 
+  <View style={styles.allImage}> 
       <View>
         <View style={styles.imageView}>
-        <Image style={{width:30,height:30, borderRadius:50}} source={require('../../assets/image/Mask Group.png')} />
+        <Text>img</Text>
         </View>
         <Text style={styles.imageText}>Avoid close contact</Text>
       </View>
       <View>
         <View style={styles.imageView}>
-         <Text>kkk</Text>
+         <Text>img</Text>
         </View>
         <Text style={styles.imageText}>Clean your hands often</Text>
       </View>
       <View>
         <View style={styles.imageView}>
-         <Text>kkk</Text>
+         <Text>img</Text>
         </View>
         <Text style={styles.imageText}>Wear a facemask</Text>
       </View>
@@ -72,7 +72,9 @@ export default function Home(){
   {/* testView  */}
      <View style={styles.testView}>
       <View>
-      <Image style={{marginTop:-spacing[7]}} source={require('../../assets/image/Frame.png')} />
+      <Image style={{marginTop:-spacing[7]}} source={require('../../assets/image/Frame.png')}
+      resizeMethod='cover'
+       />
       </View>
       <View style={{marginLeft:spacing[4], width:'60%'}}>
       <Text preset="h4"> Do your own test!</Text>
@@ -151,7 +153,10 @@ const styles = StyleSheet.create({
     marginVertical:spacing[3],
     borderRadius:'50%',
     justifyContent:'center',
-    alignItems:'center'
+    alignItems:'center',
+    backgroundColor:colors.pink,
+    width:90,
+    height:90
   },
   imageText:{
     marginTop:10,
