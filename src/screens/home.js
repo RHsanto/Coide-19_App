@@ -20,7 +20,7 @@ export default function Home(){
         <Text preset="h3">Covid-19</Text>
         </View>
         <View style={styles.dropdown}>
-        <Image style={{width:30,height:30, borderRadius:'50%'}} source={require('../../assets/image/download.png')} />
+        <Image style={{width:30,height:30, borderRadius:50}} source={require('../../assets/image/download.png')} />
         <Text preset="small" style={styles.usa}>USA</Text>
       <Octicons name="triangle-down" size={24} style={{color:colors.grey,marginRight:spacing[2]}} /> 
         </View>
@@ -28,7 +28,8 @@ export default function Home(){
     {/*description section  */}
       <View>
        <Text preset="h4">Are you feeling sick?</Text>
-       <Text preset="small" style={{marginTop:spacing[3], lineHeight:22,}}>If you feel sick with any of covid-19 symptoms please call or SMS us immediately for help.</Text>
+       <Text preset="small" style={{marginTop:spacing[3], lineHeight:22,}}>
+        If you feel sick with any of covid-19 symptoms please call or SMS us immediately for help.</Text>
       </View>
   {/* contact btn */}
       <View style={styles.contactBtn}>
@@ -51,7 +52,7 @@ export default function Home(){
        <View style={styles.allImage}> 
       <View>
         <View style={styles.imageView}>
-         <Text>kkk</Text>
+        <Image style={{width:30,height:30, borderRadius:50}} source={require('../../assets/image/Mask Group.png')} />
         </View>
         <Text style={styles.imageText}>Avoid close contact</Text>
       </View>
@@ -70,13 +71,13 @@ export default function Home(){
        </View>
   {/* testView  */}
      <View style={styles.testView}>
-      <View style={styles.lastView} >
-      <Text preset="h4"> Do your own test!</Text>
-        <Text > Follow the instructions to do your own test.</Text>
+      <View>
+      <Image style={{marginTop:-spacing[7]}} source={require('../../assets/image/Frame.png')} />
       </View>
-      <View style={styles.lastView}>
-        <Text preset="h4"> Do your own test!</Text>
-        <Text preset="small" style={{fontFamily:typography.small,marginTop:5,lineHeight:16}}> Follow the instructions to do your own test.</Text>
+      <View style={{marginLeft:spacing[4]}}>
+      <Text preset="h4"> Do your own test!</Text>
+        <Text  > 
+        Follow the instructions  to do your own test.</Text>
       </View>
      
      
@@ -165,11 +166,11 @@ const styles = StyleSheet.create({
    backgroundColor:colors.violet2,
    borderRadius:16,
    padding:spacing[4],
+   height:105,
    flexDirection:'row',
-
+  
+   
   }
   ,
-  lastView:{
-    width:'50%',
-  }
+
 })
