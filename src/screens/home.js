@@ -66,7 +66,7 @@ export default function Home(){
         <View style={styles.imageView}>
          <Text>img</Text>
         </View>
-        <Text style={styles.imageText}>Wear a facemask</Text>
+        <Text style={styles.imageText}>Wear a facepalm</Text>
       </View>
        </View>
   {/* testView  */}
